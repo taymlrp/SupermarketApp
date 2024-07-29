@@ -4,11 +4,19 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const app = express();
 
+/*
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
     database: 'c237_l11b_supermarketapp'
+  });
+*/
+const connection = mysql.createConnection({
+    host: 'db4free.net',
+    user: 'hazetay',
+    password: 'hazetay123',
+    database: 'c237_l11b_superm'
   });
 
 connection.connect((err) => {
